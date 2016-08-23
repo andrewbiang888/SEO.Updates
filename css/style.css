@@ -242,7 +242,7 @@ div#addon {
 	list-style: none;
 }
 
-	code {
+	.htmlcode code {
 		vertical-align:middle;
 		border-radius: 0.25em;
 		background: rgba(0, 173, 181, .15);
@@ -255,19 +255,22 @@ div#addon {
 		margin-left: 20%;
 		margin-bottom: 5em;
 
+
 	}
 
 	pre {
 		-webkit-overflow-scrolling: touch;
 		font-family: "Courier New", monospace;
 		margin: 0 0 2em 0;
+		display: inline-flex !important;
 
 	}
 
 		pre code {
-			display: inline-block;
+			/*display: inline-block;*/
 			/*padding: 1em 1.5em;*/
 			overflow-x: auto;
+			align-items: left;
 
 		}
 
@@ -453,12 +456,12 @@ div#addon {
     Preamble
 -------------------------------------------*/
 .preamble {
-	background: transparent url(i/../img/loadingpikapika.gif) no-repeat 50% 0;
+	background: transparent;
 }
 
 .preamble h3:after {
 	visibility: visible;
-	content: "Founded on Honesty, Clarity, and Simplicity";
+	content: "Your <head> code is your best friend!";
 }
 
 
@@ -467,6 +470,7 @@ div#addon {
 -------------------------------------------*/
 .explanation h3:after {
 	content: "K.I.S.S.";
+
 }
 
 
