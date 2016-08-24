@@ -57,7 +57,7 @@
 
 		<div class="summary" id="ae-summary" role="article">
 
-			<p>This is beta-app for SEO Updates and onboarding documentation.</p>
+			<p>This is a beta-app for SEO Updates and/or onboarding documentation.</p>
 
 		</div>
 		<div id="addon">
@@ -79,18 +79,19 @@
 		<div class="preamble" id="ae-preamble" role="article">
 			<h1>SEO is going Moble, so what HTML implications are there?</h1><br>
 			<h3></h3>
-			<p>Website designs need to be data driven, and built with SEO in mind from square one.</p>
+			<p>Website designs need to be data driven, and built with SEO in mind for all devices.</p>
 
 
 
-			<p>I recommend using your browser's developer tools to check this page's source code to see the full &lthead&gt section code layout.</p>
+			<p>I recommend using your browser's developer tools to check this page's source code to see the full <code>&lthead&gt</code> section code layout.</p>
 		</div>
 	</section>
 
 <section class="tagsforhtml benefits preamble" role="article">
-	<h1>HTML: What you <em>need</em> to know:</h1>
-	<p>Source code is very important to Google. Source code is what tells Google what content you site has, what devices it is compatible with, and other functions it may have.</p><br>
-	<p>The first thing your &lthead&gt HTML needs to tell Google is what your website's name is and what it is about, so make sure these two points are well-thought-out and SEO friendly.</p>
+	<h1>HTML: What you <em>need</em> to know for good SEO:</h1>
+	<p>Source code is very important to Google. It is what tells Google what content your site has, what devices it is compatible with, and what other functions it may have.</p>
+	<p>Where to start: Have a solid <code>&lthead&gt</code>.</p>
+	<p>The first thing your <code>&lthead&gt</code> HTML needs to tell Google is your website's name and what it is about, so make sure these two points are well-thought-out and SEO friendly.</p>
 
 <div class="htmlcode">
 
@@ -108,6 +109,21 @@
 
 </code></pre>
 
+<p>It is very important to tell Google's crawler to access all of your webpages, not just your hompage. This following code tells Google to keep going through your website!</p>
+
+<pre><code>
+
+     &ltmeta name="robots" content="index, follow"&gt
+
+</code></pre>
+
+<p>Now that Google is paying attention to the entire website, one common problem that arises is that multiple pages have simmilar URLs and content. This is particularly common for online shopping systems. <a href="https://support.google.com/webmasters/answer/139066?hl=en&ref_topic=4617741">Google reccomends</a> using a canonical URL in the <code>&lthead&gt</code> and assign one main page for content, this way your webpages won't compete against each other and loose in ranking to another canonical website.</p>
+
+<pre><code class="codebox">
+
+&ltlink rel="canonical" href="https://.com"&gt
+
+</code></pre>
 
 
 </div>
@@ -118,30 +134,32 @@
 
 	<div class="main supporting" id="ae-supporting" role="main">
 		<div class="explanation" id="ae-explanation" role="article">
-			<h3>So What is This About?</h3>
-			<p>Keep it Selfless and Simple</p>
+			<h3></h3>
+			<p>Great! The <code>&lthead&gt</code> is important. Awesome, but content is key!</p>
+
 		</div>
 
-		<div class="participation" id="ae-participation" role="article">
+		<!-- <div class="participation" id="ae-participation" role="article">
 			<h3>Participation</h3>
 			<p>A good story is the most important thing you will ever sell. They are the start to every meaningful relationship and the beginnings of establishing longevity and trust as a brand. As story designers, we craft narratives that bridge the gap between your vision and audience.</p>
-		</div>
+		</div> -->
 
-		<div class="benefits" id="ae-benefits" role="article">
+		<!-- <div class="benefits" id="ae-benefits" role="article">
 			<h3>Benefits</h3>
 			<p>We are your UX Gurus. Yes, we wireframe, prototype, and analyze. We even do our own brand of psychometrics and usability testing. But, most importantly, we have devoted a lifetime to discovering key audiences and creating products that people love. Nothing brings us more joy than someone excitedly saying, “This is exactly what I needed! I love this!” Let’s build your next great product together.</p>
-		</div>
+		</div> -->
 
 		<div class="requirements" id="ae-requirements" role="article">
 			<h3>Requirements</h3>
-			<p>Websites are the battlegrounds of modern competition. A well designed website resonates with your audience, builds relationships, and drives your key marketing conversions across all key touchpoints and devices. From beginning to end, we will create an experience your audience will love and a website you will be proud to give out and be associated with</p>
+			<p>Websites are the battlegrounds of modern competition. A well designed website resonates with the audience, builds relationships, and drives key marketing conversions across all key touchpoints and devices.</p>
 
-			<p>Mobile devices will overtake desktop sales by 2017. We know how important it is for you to reach your audience where they play. As such all of our designs have a dedicated UX guru and designer so you can reach the right people the right way across all devices. </p>
+			<p>Mobile devices will overtake desktop sales by 2017. Websites need to reach an audience where they play.</p>
 
 			<p>This is a learning exercise as well as a demonstration.</p>
 
 			<p role="contentinfo">Coded by <a href="https://www.linkedin.com/in/andrew-erickson-073b856a
 ">Andrew Erickson</a>.</p>
+				<p>Find me on <a href="https://www.linkedin.com/in/andrew-erickson-073b856a">LinkedIn.</a></p>
 		</div>
 
 		<footer>
@@ -159,11 +177,14 @@
 				<nav role="navigation">
 					<ul>
 					<li>
-						<a href="https://www.linkedin.com/in/andrew-erickson-073b856a" class="design-name">Designer/Coder</a> by <a href="https://www.linkedin.com/in/andrew-erickson-073b856a" class="designer-name"> Andrew Erickson</a>
+						<a href="https://www.linkedin.com/in/andrew-erickson-073b856a" class="design-name">Designer/Coder</a> <a href="https://www.linkedin.com/in/andrew-erickson-073b856a" class="designer-name"> Andrew Erickson</a>
 					</li>
 				  </ul>
 				</nav>
 			</div>
+
+
+
 
 			<!-- <div class="design-archives" id="design-archives">
 				<h3 class="archives">Archives:</h3>
@@ -191,5 +212,8 @@
 <!-- <div class="extra1" role="presentation"></div><div class="extra2" role="presentation"></div><div class="extra3" role="presentation"></div>
 <div class="extra4" role="presentation"></div><div class="extra5" role="presentation"></div><div class="extra6" role="presentation"></div> -->
 </div>
+
+
+
 </body>
 </html>
